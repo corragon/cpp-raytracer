@@ -1,11 +1,12 @@
 #include <fstream>
+#include "vec3.h"
 using namespace std;
 
 int main()
 {
   int nx = 200;
   int ny = 100;
-  
+
   ofstream myfile;
   myfile.open ("image.ppm");
   myfile << "P3\n" << nx << " " << ny << "\n255\n";
