@@ -1,3 +1,5 @@
+#ifndef VEC3H
+#define VEC3H
 #include <math.h>
 #include <stdlib.h>
 
@@ -50,6 +52,10 @@ inline vec3 operator*(const vec3 &v1, const float t) {
   return vec3(v1.e[0] * t, v1.e[1] * t, v1.e[2] * t);
 }
 
+inline vec3 operator*(const float t, const vec3 &v1) {
+  return vec3(v1.e[0] * t, v1.e[1] * t, v1.e[2] * t);
+}
+
 inline vec3 operator/(const vec3 &v1, const float t) {
   return vec3(v1.e[0] / t, v1.e[1] / t, v1.e[2] / t);
 }
@@ -67,3 +73,5 @@ inline vec3 cross(const vec3 &v1, const vec3 &v2) {
 inline vec3 unit_vector(vec3 v) {
   return v / v.length();
 }
+
+#endif
