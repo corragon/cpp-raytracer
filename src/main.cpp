@@ -1,6 +1,6 @@
 #include <fstream>
-#include "vec3.h"
 #include "ray.h"
+#include "sphere.h"
 using namespace std;
 
 float hit_sphere(const vec3& center, float radius, const ray& r) {
