@@ -37,8 +37,7 @@ int main()
   for (int j = ny-1; j >= 0 ; j--) {
     for (int i = 0; i < nx; i++) {
       vec3 col(0, 0, 0);
-      for (int s = 0; s < ns; s++)
-      {
+      for (int s = 0; s < ns; s++) {
         float u = float(i + drand48()) / float(nx);
         float v = float(j + drand48()) / float(ny);
         ray r = cam.get_ray(u, v);
