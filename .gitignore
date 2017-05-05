@@ -30,3 +30,6 @@
 
 # Mac system file
 .DS_Store
+
+# Image Render
+*.ppm
